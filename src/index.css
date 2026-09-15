@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); opacity: 0.85; filter: drop-shadow(0 0 15px rgba(250, 204, 21, 0.6)); }
+  50% { transform: scale(1.04); opacity: 1; filter: drop-shadow(0 0 30px rgba(250, 204, 21, 0.95)) drop-shadow(0 0 45px rgba(6, 182, 212, 0.7)); }
+}
+
+.animate-glow-pulse {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+.animate-scanline {
+  animation: scanline 4s linear infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.animate-radar {
+  animation: radar-sweep 6s linear infinite;
+}
+
+.animate-secret-pulse {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+/* Custom scrollbar for cyber aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090c13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+

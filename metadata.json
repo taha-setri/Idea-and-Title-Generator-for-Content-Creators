@@ -1,0 +1,8 @@
+{
+  "name": "Idea and Title Generator for Content Creators",
+  "description": "استوديو مستقبلي فوري لتوليد عناوين جذابة، بدايات مشوقة (Hooks)، وهياكل محتوى مبنية على معادلات نفسية مجربة لصناع المحتوى.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
